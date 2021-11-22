@@ -36,6 +36,6 @@ def lengthOfLIS(nums):
     for i in range(length):
         for j in range(0,i):
             if nums[i] > nums[j]:
-                results[i] = max(results[j] + 1,results[i])
+                results[i] = max(results[j] + 1, results[i])
         longest = max(results[i], longest)
     return longest
